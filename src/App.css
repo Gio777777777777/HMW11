@@ -1,0 +1,108 @@
+body {
+  background-color: #a0daf3;
+  font-family: 'Arial', sans-serif;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    text-align: center;
+}
+
+header {
+  background-color: #0c66b1;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #6a11cb;
+  transform: scale(1.1);
+}
+
+.hobby-button {
+  padding: 14px 30px;
+  background-color: #3498db;
+  color: rgb(125, 29, 29);
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 30px;
+}
+
+.hobby-button:hover {
+  background-color: #8e44ad;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hobby-button:active {
+  transform: scale(0.98);
+  background-color: #5d33b0;
+}
+
+.hobby-button {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  nav a {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+
+  .hobby-button {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+}
